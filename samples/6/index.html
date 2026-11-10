@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sample 6 · Bold newsroom · Cold Email Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;62..125,800;62..125,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bk:#0c0c0e;--bk2:#141418;--bk3:#1d1d23;--line:#2a2a33;--wh:#f5f4f0;--mut:#9a99a3;--mut2:#6c6b75;
+  --lime:#d4ff3a;--coral:#ff5a36;--violet:#7b5cff;--blue:#3d7bff;
+  --disp:"Archivo",system-ui,sans-serif;--sans:"Inter",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bk);color:var(--wh);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.w{max-width:1320px;margin:0 auto;padding:0 24px}
+.lab{font:700 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+
+/* ticker */
+.tick{background:var(--lime);color:var(--bk);overflow:hidden;white-space:nowrap;font:700 12px/34px var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.tick .run{display:inline-block;animation:run 38s linear infinite;padding-left:100%}
+.tick span{margin-right:44px}
+.tick b{background:var(--bk);color:var(--lime);padding:3px 7px;margin-right:10px}
+@keyframes run{to{transform:translateX(-100%)}}
+
+/* header */
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(12,12,14,.92);backdrop-filter:blur(10px);z-index:30}
+.hd{display:flex;align-items:center;height:72px;gap:34px}
+.logo{display:flex;align-items:center;gap:10px;font:900 26px/1 var(--disp);font-stretch:75%;letter-spacing:-.01em;text-transform:uppercase;flex:none}
+.logo .m{width:36px;height:36px;background:var(--lime);display:grid;place-items:center;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}
+.logo em{font-style:normal;color:var(--lime)}
+.nv{display:flex;height:100%;font:600 14px/1 var(--sans)}
+.nv .i{display:flex;align-items:center;padding:0 14px;height:100%;position:relative;color:#d6d5dc}
+.nv .i:hover{color:var(--lime)}
+.nv .i:hover .mega{opacity:1;pointer-events:auto;transform:translateY(0)}
+.mega{position:fixed;left:0;right:0;top:106px;background:var(--bk2);border-bottom:1px solid var(--line);opacity:0;pointer-events:none;transform:translateY(-6px);transition:.18s;color:var(--wh)}
+.mega .w{display:grid;grid-template-columns:1fr 1fr 1fr 1.4fr;gap:36px;padding-top:30px;padding-bottom:34px}
+.mega h6{margin:0 0 14px;font:700 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.mega a{display:block;font:600 16px/1.3 var(--sans);padding:7px 0}
+.mega a:hover{color:var(--lime)}
+.mega .ft{background:var(--bk3);padding:18px;border-left:3px solid var(--lime)}
+.mega .ft b{display:block;font:800 22px/1.1 var(--disp);font-stretch:85%;margin:10px 0 6px}
+.hd .r{margin-left:auto;display:flex;gap:10px;align-items:center}
+.bt{display:inline-flex;align-items:center;gap:8px;font:700 13px/1 var(--sans);padding:12px 16px;border:1px solid var(--line);transition:.15s;white-space:nowrap}
+.bt:hover{border-color:var(--wh)}
+.bt.l{background:var(--lime);color:var(--bk);border-color:var(--lime)}
+.bt.l:hover{background:#e6ff7a}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 380px;gap:0;border-bottom:1px solid var(--line)}
+.lead{position:relative;min-height:600px;border-right:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 40px 40px 0}
+.vsart{position:absolute;inset:0 0 0 -24px;}
+.vsart svg{width:100%;height:100%;display:block}
+.lead .txt{position:relative;z-index:2;max-width:760px}
+.lead h1{font:900 76px/.92 var(--disp);font-stretch:72%;text-transform:uppercase;letter-spacing:-.005em;margin:14px 0 18px}
+.lead h1 span{color:var(--lime)}
+.lead p{font-size:19px;color:#cfced6;max-width:580px;margin:0 0 20px}
+.by{font:500 13px var(--sans);color:var(--mut);display:flex;gap:14px;flex-wrap:wrap}
+.by b{color:var(--wh)}
+.chip{display:inline-block;background:var(--coral);color:#fff;padding:7px 9px}
+
+.side{display:flex;flex-direction:column}
+.side .h{padding:22px 0 14px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.top{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:20px 0 20px 28px;border-bottom:1px solid var(--line);transition:.15s}
+.top:hover{background:var(--bk2)}
+.top .n{font:900 40px/1 var(--disp);font-stretch:70%;color:var(--mut2)}
+.top:hover .n{color:var(--lime)}
+.top h3{margin:6px 0 6px;font:700 17px/1.3 var(--sans)}
+.top small{color:var(--mut);font-size:13px}
+
+/* rail */
+.rail{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.pk{padding:30px 28px;border-right:1px solid var(--line);position:relative;transition:.2s}
+.pk:last-child{border-right:0}
+.pk:hover{background:var(--bk2)}
+.pk .rb{position:absolute;top:0;left:28px;font:700 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:9px 10px 12px;clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}
+.pk .row{display:flex;align-items:center;gap:16px;margin-top:34px}
+.tile{width:58px;height:58px;display:grid;place-items:center;font:900 28px var(--disp);color:#fff;flex:none}
+.pk h3{font:900 34px/1 var(--disp);font-stretch:78%;text-transform:uppercase;margin:0}
+.pk .fr{font:500 13px var(--mono);color:var(--mut);margin-top:6px}
+.pk .sc{margin-left:auto;text-align:right}
+.pk .sc b{display:block;font:900 46px/1 var(--disp);font-stretch:70%}
+.pk .sc span{font:700 10px var(--mono);color:var(--mut);letter-spacing:.08em}
+.pk p{color:#cfced6;margin:18px 0 18px;font-size:15.5px}
+.pros{display:grid;grid-template-columns:1fr 1fr;gap:14px;font-size:13.5px;color:#cfced6;margin-bottom:20px}
+.pros b{display:block;font:700 10.5px var(--mono);letter-spacing:.08em;margin-bottom:6px}
+.pros .p b{color:var(--lime)}.pros .c b{color:var(--coral)}
+
+/* sections */
+.sh{display:flex;justify-content:space-between;align-items:end;padding:56px 0 22px;border-bottom:4px solid var(--wh);margin-bottom:28px;gap:20px}
+.sh h2{margin:0;font:900 54px/.9 var(--disp);font-stretch:72%;text-transform:uppercase}
+.sh h2 em{font-style:normal;color:var(--lime)}
+.sh a{font:700 13px var(--mono);text-transform:uppercase;color:var(--lime);white-space:nowrap}
+
+.grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+.st .im{aspect-ratio:16/11;overflow:hidden;margin-bottom:16px;background:var(--bk3)}
+.st.big .im{aspect-ratio:16/9.5}
+.st .im svg{width:100%;height:100%;display:block;transition:transform .5s}
+.st:hover .im svg{transform:scale(1.04)}
+.st h3{font:800 24px/1.12 var(--disp);font-stretch:88%;margin:10px 0 8px}
+.st.big h3{font-size:38px;font-stretch:80%;text-transform:uppercase;font-weight:900;line-height:.98}
+.st:hover h3{color:var(--lime)}
+.st p{color:var(--mut);margin:0;font-size:15px}
+.st .lab{color:var(--lime)}
+
+/* price watch */
+.pw{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.pc{background:var(--bk);padding:26px}
+.pc .t{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.pc .t .tile{width:38px;height:38px;font-size:18px}
+.pc .t b{font:800 20px var(--disp);font-stretch:85%;text-transform:uppercase}
+.ln{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-top:1px dashed var(--line);font-size:14.5px;color:#cfced6}
+.ln b{font:700 20px var(--mono);color:var(--wh)}
+.pc a.src{display:inline-block;margin-top:14px;font:700 12px var(--mono);color:var(--lime);text-transform:uppercase}
+
+/* method */
+.mth{margin-top:70px;background:var(--lime);color:var(--bk)}
+.mth .w{display:grid;grid-template-columns:1.1fr 2fr;gap:50px;padding-top:56px;padding-bottom:56px}
+.mth h2{font:900 64px/.88 var(--disp);font-stretch:70%;text-transform:uppercase;margin:12px 0 18px}
+.mth p{font-size:17px;margin:0;max-width:380px}
+.ms{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--bk)}
+.ms div{padding:20px 20px 20px 0;border-bottom:1px solid rgba(12,12,14,.25)}
+.ms b{display:block;font:900 22px/1.1 var(--disp);font-stretch:85%;text-transform:uppercase;margin:8px 0 6px}
+.ms span{font-size:15px}
+
+.news{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:46px 0;border-bottom:1px solid var(--line)}
+.news h3{margin:0;font:900 40px/.95 var(--disp);font-stretch:72%;text-transform:uppercase}
+.news form{display:flex;border:1px solid var(--wh)}
+.news input{background:transparent;border:0;color:var(--wh);padding:16px;font:500 15px var(--sans);width:300px;outline:0}
+.news button{background:var(--wh);color:var(--bk);border:0;font:800 13px var(--mono);text-transform:uppercase;padding:0 22px;cursor:pointer}
+
+footer{padding:48px 0 26px;color:var(--mut);font-size:14px}
+.fg{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:28px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+.fg h6{margin:0 0 14px;font:700 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--wh)}
+.fg a{display:block;padding:5px 0}.fg a:hover{color:var(--lime)}
+.fl{display:flex;justify-content:space-between;gap:20px;padding-top:20px;flex-wrap:wrap}
+.fl b{color:var(--wh)}
+
+@media(max-width:1100px){
+  .nv{display:none}
+  .hero{grid-template-columns:1fr}
+  .lead{border-right:0;min-height:520px;padding-right:0}
+  .side .h,.top{padding-left:0}
+  .rail{grid-template-columns:1fr}
+  .pk{border-right:0;border-bottom:1px solid var(--line);padding-left:0;padding-right:0}
+  .pk .rb{left:0}
+  .grid{grid-template-columns:1fr 1fr}
+  .st.big{grid-column:1/-1}
+  .pw{grid-template-columns:1fr}
+  .mth .w{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr 1fr}
+  .news{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .w{padding:0 16px}
+  .hd .r .bt:not(.l){display:none}
+  .logo{font-size:21px}
+  .lead h1{font-size:50px}
+  .lead p{font-size:17px}
+  .sh h2{font-size:38px}
+  .grid{grid-template-columns:1fr}
+  .st.big h3{font-size:30px}
+  .mth h2{font-size:48px}
+  .ms{grid-template-columns:1fr}
+  .news input{width:100%;min-width:0}.news form{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="tick"><div class="run">
+  <span><b>Price watch</b>Instantly Outreach Growth $47/mo</span>
+  <span><b>Price watch</b>Smartlead Base $39/mo</span>
+  <span><b>Price watch</b>Acquirely Starter $29/mo</span>
+  <span><b>Checked</b>10 Nov 2026 on each vendor's own page</span>
+  <span><b>New</b>Instantly vs Smartlead vs Acquirely: the full breakdown</span>
+</div></div>
+
+<header><div class="w hd">
+  <a class="logo" href="#"><span class="m"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M1 1h18v14H1z" fill="none" stroke="#0c0c0e" stroke-width="2.4" stroke-linejoin="round"/><path d="M1 1l9 7 9-7" fill="none" stroke="#0c0c0e" stroke-width="2.4" stroke-linejoin="round"/></svg></span>Cold Email <em>Review</em></a>
+  <nav class="nv">
+    <div class="i">Reviews
+      <div class="mega"><div class="w">
+        <div><h6>Platforms</h6><a href="#">Instantly</a><a href="#">Smartlead</a><a href="#">Acquirely</a><a href="#">Lemlist</a></div>
+        <div><h6>Best of 2026</h6><a href="#">Best overall</a><a href="#">Best for agencies</a><a href="#">Best with leads</a><a href="#">Best budget</a></div>
+        <div><h6>Versus</h6><a href="/reviews/instantly-vs-smartlead-vs-acquirely/">Instantly vs Smartlead vs Acquirely</a><a href="#">Instantly vs Smartlead</a><a href="#">Smartlead vs Acquirely</a></div>
+        <a class="ft" href="/reviews/instantly-vs-smartlead-vs-acquirely/"><span class="lab" style="color:var(--lime)">The big one</span><b>Three platforms, every plan, one table.</b><span style="color:var(--mut);font-size:14px">Read the comparison →</span></a>
+      </div></div>
+    </div>
+    <div class="i">Best picks</div>
+    <div class="i">Versus</div>
+    <div class="i">Deliverability</div>
+    <div class="i">Price watch</div>
+    <div class="i">How we review</div>
+  </nav>
+  <div class="r"><a class="bt" href="#">Search</a><a class="bt l" href="#">Get the newsletter</a></div>
+</div></header>
+
+<main class="w">
+  <section class="hero">
+    <a class="lead" href="/reviews/instantly-vs-smartlead-vs-acquirely/">
+      <div class="vsart"><svg viewBox="0 0 900 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset=".25" stop-color="#0c0c0e" stop-opacity="0"/><stop offset=".92" stop-color="#0c0c0e"/></linearGradient>
+          <pattern id="gr" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1f1f26" stroke-width="1"/></pattern>
+        </defs>
+        <rect width="900" height="600" fill="#0c0c0e"/>
+        <rect width="900" height="600" fill="url(#gr)"/>
+        <g transform="translate(110 60) rotate(-8)"><rect width="230" height="300" fill="#3d7bff"/><text x="22" y="270" font-family="Archivo" font-stretch="70%" font-weight="900" font-size="230" fill="#0c0c0e" opacity=".9">I</text><text x="22" y="44" font-family="JetBrains Mono" font-weight="700" font-size="16" fill="#0c0c0e">$47/MO</text></g>
+        <g transform="translate(360 40) rotate(4)"><rect width="230" height="300" fill="#7b5cff"/><text x="22" y="270" font-family="Archivo" font-stretch="70%" font-weight="900" font-size="230" fill="#0c0c0e" opacity=".9">S</text><text x="22" y="44" font-family="JetBrains Mono" font-weight="700" font-size="16" fill="#0c0c0e">$39/MO</text></g>
+        <g transform="translate(610 70) rotate(-3)"><rect width="230" height="300" fill="#d4ff3a"/><text x="22" y="270" font-family="Archivo" font-stretch="70%" font-weight="900" font-size="230" fill="#0c0c0e" opacity=".9">A</text><text x="22" y="44" font-family="JetBrains Mono" font-weight="700" font-size="16" fill="#0c0c0e">$29/MO</text></g>
+        <g transform="translate(330 180)"><circle r="44" fill="#ff5a36"/><text y="13" text-anchor="middle" font-family="Archivo" font-stretch="70%" font-weight="900" font-size="38" fill="#fff">VS</text></g>
+        <g transform="translate(590 200)"><circle r="44" fill="#ff5a36"/><text y="13" text-anchor="middle" font-family="Archivo" font-stretch="70%" font-weight="900" font-size="38" fill="#fff">VS</text></g>
+        <rect width="900" height="600" fill="url(#fade)"/>
+      </svg></div>
+      <div class="txt">
+        <span class="lab chip">The big comparison</span>
+        <h1>Instantly vs Smartlead vs <span>Acquirely</span></h1>
+        <p>Three platforms, three ways to charge you. We read every plan and priced the full stack, with every claim linked to its source.</p>
+        <div class="by"><span>By <b>the Cold Email Review desk</b></span><span>Updated 10 Nov 2026</span><span>9 min read</span></div>
+      </div>
+    </a>
+    <aside class="side">
+      <div class="h"><span class="lab" style="color:var(--lime)">Most read</span><span class="lab" style="color:var(--mut)">This week</span></div>
+      <a class="top" href="/reviews/instantly-vs-smartlead-vs-acquirely/"><span class="n">1</span><div><h3>Instantly vs Smartlead vs Acquirely: what you really pay</h3><small>Comparison</small></div></a>
+      <a class="top" href="#"><span class="n">2</span><div><h3>How many inboxes do you really need?</h3><small>Guide</small></div></a>
+      <a class="top" href="#"><span class="n">3</span><div><h3>Warm-up, explained without the jargon</h3><small>Deliverability</small></div></a>
+      <a class="top" href="#"><span class="n">4</span><div><h3>SPF, DKIM and DMARC in ten minutes</h3><small>Technical</small></div></a>
+      <a class="top" href="#"><span class="n">5</span><div><h3>Placement tests: what the numbers mean</h3><small>Testing</small></div></a>
+    </aside>
+  </section>
+
+  <section class="rail">
+    <article class="pk">
+      <span class="rb" style="background:var(--violet);color:#fff">Best for volume</span>
+      <div class="row"><span class="tile" style="background:var(--violet)">S</span><div><h3>Smartlead</h3><div class="fr">FROM $39/MO</div></div><div class="sc"><b>8.5</b><span>OUR SCORE</span></div></div>
+      <p>Most sending per dollar, and deep infrastructure options.</p>
+      <div class="pros"><div class="p"><b>+ PRO</b>90,000 sends on the $94 Pro plan</div><div class="c"><b>− CON</b>Verified emails cost extra below Smart</div></div>
+      <a class="bt" href="https://www.smartlead.ai/pricing">See pricing ↗</a>
+    </article>
+    <article class="pk">
+      <span class="rb" style="background:var(--blue);color:#fff">Best lead database</span>
+      <div class="row"><span class="tile" style="background:var(--blue)">I</span><div><h3>Instantly</h3><div class="fr">FROM $47/MO</div></div><div class="sc"><b>8.7</b><span>OUR SCORE</span></div></div>
+      <p>The big name, with a 450M+ lead database and many AI agents.</p>
+      <div class="pros"><div class="p"><b>+ PRO</b>Unlimited inboxes and warm-up</div><div class="c"><b>− CON</b>Sending and leads are separate plans</div></div>
+      <a class="bt" href="https://instantly.ai/pricing">See pricing ↗</a>
+    </article>
+    <article class="pk">
+      <span class="rb" style="background:var(--lime);color:var(--bk)">Best all-in-one</span>
+      <div class="row"><span class="tile" style="background:var(--lime);color:var(--bk)">A</span><div><h3>Acquirely</h3><div class="fr">FROM $29/MO</div></div><div class="sc"><b>8.4</b><span>OUR SCORE</span></div></div>
+      <p>One price covers sending, warm-up, AI replies and placement tests.</p>
+      <div class="pros"><div class="p"><b>+ PRO</b>Every feature on every plan</div><div class="c"><b>− CON</b>Newer, smaller community (owns this site)</div></div>
+      <a class="bt" href="https://acquirely.io/pricing">See pricing ↗</a>
+    </article>
+  </section>
+
+  <div class="sh"><h2>Deliverability <em>desk</em></h2><a href="#">All guides →</a></div>
+  <section class="grid">
+    <a class="st big" href="#">
+      <div class="im"><svg viewBox="0 0 800 475" preserveAspectRatio="xMidYMid slice"><rect width="800" height="475" fill="#7b5cff"/><g fill="none" stroke="#0c0c0e" stroke-width="2" opacity=".25"><path d="M0 95H800M0 190H800M0 285H800M0 380H800"/></g><path d="M40 420 C200 410 300 330 400 250 S600 90 760 70" fill="none" stroke="#d4ff3a" stroke-width="22" stroke-linecap="round"/><g fill="#0c0c0e"><circle cx="230" cy="378" r="18"/><circle cx="400" cy="250" r="18"/><circle cx="590" cy="120" r="18"/></g><text x="40" y="90" font-family="Archivo" font-stretch="70%" font-weight="900" font-size="110" fill="#0c0c0e">14 DAYS</text></svg></div>
+      <span class="lab">Guide</span><h3>Warm-up, explained without the jargon</h3><p>What it does, how long it takes, and when you can start sending for real.</p>
+    </a>
+    <a class="st" href="#">
+      <div class="im"><svg viewBox="0 0 400 275"><rect width="400" height="275" fill="#ff5a36"/><g transform="translate(200 150)"><rect x="-110" y="-20" width="220" height="100" fill="#0c0c0e" opacity=".35"/><rect x="-95" y="-50" width="190" height="100" fill="#0c0c0e" opacity=".6"/><rect x="-80" y="-80" width="160" height="100" fill="#f5f4f0"/><path d="M-80 -80L0 -25 80 -80" fill="none" stroke="#0c0c0e" stroke-width="7"/></g></svg></div>
+      <span class="lab">Setup</span><h3>How many inboxes do you really need?</h3><p>Size your sending without burning domains.</p>
+    </a>
+    <a class="st" href="#">
+      <div class="im"><svg viewBox="0 0 400 275"><rect width="400" height="275" fill="#1d1d23"/><g font-family="JetBrains Mono" font-weight="700" font-size="20" fill="#f5f4f0"><text x="40" y="80">SPF</text><text x="40" y="145">DKIM</text><text x="40" y="210">DMARC</text></g><g fill="#d4ff3a"><rect x="150" y="64" width="160" height="22"/><rect x="150" y="129" width="120" height="22"/><rect x="150" y="194" width="190" height="22"/></g><g fill="#0c0c0e" font-family="JetBrains Mono" font-weight="700" font-size="14"><text x="158" y="81">PASS</text><text x="158" y="146">PASS</text><text x="158" y="211">PASS</text></g></svg></div>
+      <span class="lab">Technical</span><h3>SPF, DKIM and DMARC in ten minutes</h3><p>The three records every sending domain needs.</p>
+    </a>
+  </section>
+
+  <div class="sh"><h2>Price <em>watch</em></h2><a href="#">Full tracker →</a></div>
+  <section class="pw">
+    <div class="pc"><div class="t"><span class="tile" style="background:var(--blue)">I</span><b>Instantly</b></div>
+      <div class="ln">Outreach Growth<b>$47</b></div><div class="ln">Starter bundle (with leads)<b>$94</b></div><div class="ln">Scale bundle<b>$194</b></div>
+      <a class="src" href="https://instantly.ai/pricing">Source: instantly.ai ↗</a></div>
+    <div class="pc"><div class="t"><span class="tile" style="background:var(--violet)">S</span><b>Smartlead</b></div>
+      <div class="ln">Base<b>$39</b></div><div class="ln">Pro<b>$94</b></div><div class="ln">Smart (with leads)<b>$174</b></div>
+      <a class="src" href="https://www.smartlead.ai/pricing">Source: smartlead.ai ↗</a></div>
+    <div class="pc"><div class="t"><span class="tile" style="background:var(--lime);color:var(--bk)">A</span><b>Acquirely</b></div>
+      <div class="ln">Starter<b>$29</b></div><div class="ln">Pro<b>$99</b></div><div class="ln">Growth<b>$299</b></div>
+      <a class="src" href="https://acquirely.io/pricing">Source: acquirely.io ↗</a></div>
+  </section>
+</main>
+
+<section class="mth"><div class="w">
+  <div><span class="lab">How we review</span><h2>No free passes.</h2><p>Not even for Acquirely, the company that owns us. Every claim on this site links to its source.</p></div>
+  <div class="ms">
+    <div><span class="lab">01</span><b>Read every plan</b><span>From the vendor's own pricing and docs.</span></div>
+    <div><span class="lab">02</span><b>Price the full stack</b><span>Sending, leads, warm-up and testing together.</span></div>
+    <div><span class="lab">03</span><b>Pros and cons for all</b><span>Every tool gets both, sourced.</span></div>
+    <div><span class="lab">04</span><b>Dated and corrected</b><span>Check dates on every page, fixes noted.</span></div>
+  </div>
+</div></section>
+
+<div class="w">
+  <section class="news"><h3>Price changes, every Tuesday.</h3><form onsubmit="return false"><input type="email" placeholder="you@company.com" aria-label="Email"><button>Subscribe</button></form></section>
+  <footer>
+    <div class="fg">
+      <div><a class="logo" href="#"><span class="m"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M1 1h18v14H1z" fill="none" stroke="#0c0c0e" stroke-width="2.4"/><path d="M1 1l9 7 9-7" fill="none" stroke="#0c0c0e" stroke-width="2.4"/></svg></span>Cold Email <em>Review</em></a><p style="margin-top:14px">Cold email software, reviewed and sourced.</p></div>
+      <div><h6>Reviews</h6><a href="#">Instantly</a><a href="#">Smartlead</a><a href="#">Acquirely</a></div>
+      <div><h6>Best of</h6><a href="#">Best overall</a><a href="#">For agencies</a><a href="#">Budget</a></div>
+      <div><h6>Guides</h6><a href="#">Warm-up</a><a href="#">DNS records</a><a href="#">Placement</a></div>
+      <div><h6>About</h6><a href="/about/">About us</a><a href="#">How we review</a><a href="#">Corrections</a></div>
+    </div>
+    <div class="fl"><span><b>Owned by Acquirely.</b> Disclosed on every page.</span><span>© 2026 Cold Email Review</span></div>
+  </footer>
+</div>
+</body>
+</html>
