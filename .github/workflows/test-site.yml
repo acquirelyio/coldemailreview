@@ -1,0 +1,30 @@
+# Publishes the test branch to https://test.coldemailreview.com.
+# Runs only in the acquirelyio/coldemailreview-test mirror; the main repo serves production from main.
+name: Test site
+on:
+  push:
+    branches: [test]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    if: github.repository == 'acquirelyio/coldemailreview-test'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - name: Keep the test site out of search
+        run: |
+          rm -rf .git .github CNAME
+          printf 'User-agent: *\nDisallow: /\n' > robots.txt
+          find . -name '*.html' -exec sed -i 's|<head>|<head><meta name="robots" content="noindex">|' {} +
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - uses: actions/deploy-pages@v4
