@@ -5,7 +5,7 @@
   var TOOLS = {
     I: { name: "Instantly", tile: "#2b5cff", why: "The biggest name, with a 450M+ lead database and many AI agents. Sending and leads are separate plans, so budget for both.", from: "From $47/mo", review: R + "#instantly", site: "https://instantly.ai/pricing" },
     S: { name: "Smartlead", tile: "#6a3df0", why: "The most sending per dollar (90,000 sends on the $94 Pro plan), with deep options to buy your own mailboxes and servers.", from: "From $39/mo", review: R + "#smartlead", site: "https://www.smartlead.ai/pricing" },
-    A: { name: "Acquirely", tile: "#1a1410", why: "One price covers sending, warm-up, AI replies and placement tests; you pay only for verified leads. Newer and smaller than the other two.", from: "From $29/mo", review: R + "#acquirely", site: "https://acquirely.io/pricing" }
+    A: { name: "Acquirely", tile: "#1c1418", why: "One price covers sending, warm-up, AI replies and placement tests; you pay only for verified leads. Newer and smaller than the other two.", from: "From $29/mo", review: R + "#acquirely", site: "https://acquirely.io/pricing" }
   };
   var QS = [
     { q: "What matters most to you?", o: [["A huge lead database", { I: 2 }], ["The most sends for the money", { S: 2 }], ["One price that covers everything", { A: 2 }]] },
