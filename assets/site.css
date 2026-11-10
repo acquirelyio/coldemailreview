@@ -280,7 +280,7 @@ h3{font:800 20px/1.25 var(--sans)}
 .endq{margin-top:56px;background:#fff;border:1px solid var(--rule);border-radius:22px;padding:30px;box-shadow:var(--sh);font-family:var(--sans)}
 .endq>h2{margin:0 0 6px!important;font-size:26px!important}
 .endq>p{color:var(--mut);font-size:15.5px;margin:0 0 20px}
-.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:8px 0 0}
+.cards3{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:8px 0 0}
 .cards3 div{background:#fff;border:1px solid var(--rule);border-radius:16px;padding:20px}
 .cards3 b{display:block;font:800 16px var(--sans);margin:12px 0 6px;color:var(--ink)}
 .cards3 p{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink2)}
