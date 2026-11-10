@@ -221,8 +221,9 @@ h3{font:800 20px/1.25 var(--sans)}
 .byline .dot{width:4px;height:4px;border-radius:50%;background:var(--faint)}
 .vs{display:flex;gap:8px;margin-top:8px}
 .vs i{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;color:#fff;font:900 18px var(--sans);font-style:normal;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}
-.layout{display:grid;grid-template-columns:240px minmax(0,1fr) 300px;gap:48px;padding-top:48px;align-items:start}
-.layout.two{grid-template-columns:240px minmax(0,1fr)}
+.layout{display:grid;grid-template-columns:200px minmax(0,1fr) 260px;gap:40px;padding-top:48px;align-items:start}
+.layout.two{grid-template-columns:200px minmax(0,760px)}
+.prose .mx table{min-width:620px}
 .toc{position:sticky;top:100px;font:600 14px var(--sans)}
 .toc .kicker{display:block;margin-bottom:12px}
 .toc a{display:block;padding:8px 12px;border-left:2px solid var(--rule);color:var(--mut);transition:.15s}
