@@ -3,9 +3,9 @@
 (function () {
   var R = "/reviews/instantly-vs-smartlead-vs-acquirely/";
   var TOOLS = {
-    I: { name: "Instantly", tile: "#2b5cff", why: "The biggest name, with a 450M+ lead database and many AI agents. Sending and leads are separate plans, so budget for both.", from: "From $47/mo", review: R + "#instantly", site: "https://instantly.ai/pricing" },
-    S: { name: "Smartlead", tile: "#6a3df0", why: "The most sending per dollar (90,000 sends on the $94 Pro plan), with deep options to buy your own mailboxes and servers.", from: "From $39/mo", review: R + "#smartlead", site: "https://www.smartlead.ai/pricing" },
-    A: { name: "Acquirely", tile: "#1c1418", why: "One price covers sending, warm-up, AI replies and placement tests; you pay only for verified leads. Newer and smaller than the other two.", from: "From $29/mo", review: R + "#acquirely", site: "https://acquirely.io/pricing" }
+    I: { name: "Instantly", logo: "instantly.png", why: "The biggest name, with a 450M+ lead database and many AI agents. Sending and leads are separate plans, so budget for both.", from: "From $47/mo", review: R + "#instantly", site: "https://instantly.ai/pricing" },
+    S: { name: "Smartlead", logo: "smartlead.png", why: "The most sending per dollar (90,000 sends on the $94 Pro plan), with deep options to buy your own mailboxes and servers.", from: "From $39/mo", review: R + "#smartlead", site: "https://www.smartlead.ai/pricing" },
+    A: { name: "Acquirely", logo: "acquirely.png", why: "One price covers sending, warm-up, AI replies and placement tests; you pay only for verified leads. Newer and smaller than the other two.", from: "From $29/mo", review: R + "#acquirely", site: "https://acquirely.io/pricing" }
   };
   var QS = [
     { q: "What matters most to you?", o: [["A huge lead database", { I: 2 }], ["The most sends for the money", { S: 2 }], ["One price that covers everything", { A: 2 }]] },
@@ -50,7 +50,7 @@
       var order = ["I", "S", "A"].sort(function (a, b) { return score[b] - score[a]; }), t = TOOLS[order[0]], alt = TOOLS[order[1]];
       var res = el("div", "fd-res");
       res.innerHTML = '<div class="fd-step">Your best fit</div>' +
-        '<div class="fd-name"><span class="fd-tile" style="background:' + t.tile + '">' + t.name[0] + "</span>" + t.name + '<small>' + t.from + "</small></div>" +
+        '<div class="fd-name"><span class="fd-tile lg"><img src="/assets/logos/' + t.logo + '" alt="' + t.name + ' logo" width="88" height="88"></span>' + t.name + '<small>' + t.from + "</small></div>" +
         '<p class="fd-why">' + t.why + "</p>" +
         '<div class="fd-cta"><a class="fd-go" href="' + t.review + '">Read our take</a><a class="fd-alt" href="' + t.site + '" rel="nofollow">Their pricing ↗</a></div>' +
         '<div class="fd-also">Also worth a look: <a href="' + alt.review + '">' + alt.name + "</a> (" + alt.from.toLowerCase() + ")</div>";
