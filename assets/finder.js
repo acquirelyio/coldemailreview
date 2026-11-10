@@ -16,7 +16,12 @@
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
 
   function mount(root) {
-    var step = 0, score = { I: 0, S: 0, A: 0 };
+    var step = 0, picks = [];
+    function tally() {
+      var s = { I: 0, S: 0, A: 0 };
+      picks.forEach(function (p) { for (var k in p) s[k] += p[k]; });
+      return s;
+    }
     function render() {
       root.innerHTML = "";
       if (step < QS.length) {
@@ -26,22 +31,31 @@
         QS[step].o.forEach(function (o) {
           var b = el("button", "fd-btn", o[0]);
           b.type = "button";
-          b.onclick = function () { for (var k in o[1]) score[k] += o[1][k]; step++; render(); };
+          b.onclick = function () { picks[step] = o[1]; step++; render(); };
           opts.appendChild(b);
         });
         root.appendChild(opts);
-        var bar = el("div", "fd-bar"); bar.appendChild(el("i")); bar.firstChild.style.width = (step / QS.length * 100) + "%";
-        root.appendChild(bar);
+        var foot = el("div", "fd-foot");
+        var bar = el("div", "fd-bar"); bar.appendChild(el("i")); bar.firstChild.style.width = ((step + 1) / QS.length * 100) + "%";
+        foot.appendChild(bar);
+        if (step > 0) {
+          var back = el("button", "fd-back", "← Back"); back.type = "button";
+          back.onclick = function () { step--; picks.length = step; render(); };
+          foot.appendChild(back);
+        }
+        root.appendChild(foot);
         return;
       }
-      var best = ["I", "S", "A"].sort(function (a, b) { return score[b] - score[a]; })[0], t = TOOLS[best];
+      var score = tally();
+      var order = ["I", "S", "A"].sort(function (a, b) { return score[b] - score[a]; }), t = TOOLS[order[0]], alt = TOOLS[order[1]];
       var res = el("div", "fd-res");
       res.innerHTML = '<div class="fd-step">Your best fit</div>' +
         '<div class="fd-name"><span class="fd-tile" style="background:' + t.tile + '">' + t.name[0] + "</span>" + t.name + '<small>' + t.from + "</small></div>" +
         '<p class="fd-why">' + t.why + "</p>" +
-        '<div class="fd-cta"><a class="fd-go" href="' + t.review + '">Read our take</a><a class="fd-alt" href="' + t.site + '" rel="nofollow">Their pricing ↗</a></div>';
+        '<div class="fd-cta"><a class="fd-go" href="' + t.review + '">Read our take</a><a class="fd-alt" href="' + t.site + '" rel="nofollow">Their pricing ↗</a></div>' +
+        '<div class="fd-also">Also worth a look: <a href="' + alt.review + '">' + alt.name + "</a> (" + alt.from.toLowerCase() + ")</div>";
       var again = el("button", "fd-again", "Start again"); again.type = "button";
-      again.onclick = function () { step = 0; score = { I: 0, S: 0, A: 0 }; render(); };
+      again.onclick = function () { step = 0; picks = []; render(); };
       res.appendChild(again);
       root.appendChild(res);
     }
