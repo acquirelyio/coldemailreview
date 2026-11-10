@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter+Tight:wght@400;500;600;700;800&display=swap");
 :root {
-  --bg: #f7f9fc;
-  --paper2: #eaf0f8;
-  --text: #07152f;
-  --ink2: #2a3a55;
-  --muted: #5d6a80;
-  --line: #dce4ef;
-  --accent: #1a5fd0;
-  --accent2: #2f86f0;
+  --bg: #faf8f6;
+  --paper2: #f5ede6;
+  --text: #1a1410;
+  --ink2: #4a3d33;
+  --muted: #6e625a;
+  --line: #ece4dd;
+  --accent: #e8590c;
+  --accent2: #ff7a1a;
   --card: #ffffff;
-  --good: #1a5fd0;
-  --bad: #b4432a;
+  --good: #e8590c;
+  --bad: #b42318;
   --serif: "Newsreader", Georgia, serif;
   --sans: "Inter Tight", system-ui, sans-serif;
 }
