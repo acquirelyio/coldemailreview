@@ -347,7 +347,8 @@ h3{font:800 20px/1.25 var(--sans)}
 .chips button:hover{border-color:var(--rose-l);color:var(--rose-d)}
 .chips button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
 .chips button[aria-pressed=true] em{color:var(--rose-l)}
-.dsort{font:700 13.5px var(--sans);color:var(--mut);display:flex;align-items:center;gap:8px}
+.dsort{order:2;font:700 13.5px var(--sans);color:var(--mut);display:flex;align-items:center;gap:8px}
+.dirbar .chips{order:3;width:100%}
 .dsort select{font:600 14px var(--sans);color:var(--ink);background:#fff;border:1px solid var(--rule2);border-radius:10px;height:40px;padding:0 10px}
 .dcount{margin:16px 0 14px;font:600 13.5px var(--sans);color:var(--mut)}
 .dir{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
