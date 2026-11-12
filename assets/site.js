@@ -43,3 +43,4 @@
     Object.keys(map).forEach(function (id) { spy.observe(document.getElementById(id)); });
   }
 })();
+document.querySelectorAll('.tiers').forEach(function(t){t.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;t.querySelectorAll('button').forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on})})});

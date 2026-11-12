@@ -387,3 +387,15 @@ h3{font:800 20px/1.25 var(--sans)}
 /* Vendor logos: real brand icons on a white tile */
 .lg{background:#fff!important;padding:0!important;overflow:hidden;box-shadow:0 0 0 1px rgba(28,20,24,.08),0 2px 6px -2px rgba(28,20,24,.12)}
 .lg img{width:100%;height:100%;object-fit:cover;display:block}
+/* Compare table: price-level tabs, sticky row labels, 7 vendors */
+.tiers{display:inline-flex;gap:4px;padding:4px;background:#fff;border:1px solid var(--rule);border-radius:999px;margin:0 0 16px}
+.tiers button{border:0;background:none;font:700 14px var(--sans);color:var(--mut);padding:9px 16px;border-radius:999px;cursor:pointer}
+.tiers button[aria-selected="true"]{background:var(--ink);color:#fff}
+.mx.cmp table{min-width:1180px;font-size:14.5px}
+.mx.cmp th,.mx.cmp td{padding:15px 16px;line-height:1.45}
+.mx.cmp tbody th,.mx.cmp thead th:first-child{position:sticky;left:0;z-index:1;background:#fff;width:190px;min-width:150px;box-shadow:1px 0 0 var(--rule)}
+.mx.cmp thead th:first-child{background:#fffafc}
+.mx.cmp thead th span{width:26px;height:26px;margin-right:8px}
+.mx.cmp td small{display:block;font-size:12.5px;color:var(--mut);font-weight:500;margin-top:2px}
+.mx.cmp .srcrow td a{font:700 13px var(--sans);color:var(--rose-d)}
+.mx.cmp thead th{white-space:nowrap}
